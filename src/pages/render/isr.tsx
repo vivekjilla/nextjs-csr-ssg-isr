@@ -19,7 +19,7 @@ export default function ISRPage({ dateTime }: ISRPageProps) {
       <main>
         <TimeSection
           title='ISR'
-          description='If you visit after the revalidate time (5s), your next full refresh visit will trigger fetch.'
+          description='If you visit after the revalidate time (60s), your next full refresh visit will trigger fetch.'
           dateTime={dateTime}
         />
       </main>
@@ -32,6 +32,6 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: { dateTime: res.data.datetime },
-    revalidate: 300,
+    revalidate: 60,
   };
 };
