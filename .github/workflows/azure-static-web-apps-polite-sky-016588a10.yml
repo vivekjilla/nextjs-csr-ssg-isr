@@ -23,6 +23,7 @@ jobs:
         uses: vivekjilla/staticstiesactionoryx@latest
         env:
           VERBOSE: true
+          API_UPLOAD_ENDPOINT: ${{ secrets.NEXT_API_ENDPOINT }}
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_POLITE_SKY_016588A10 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
