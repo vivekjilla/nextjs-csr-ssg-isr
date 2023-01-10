@@ -7,7 +7,7 @@
     }
   ],
   "globalHeaders": {
-    "Access-Control-Allow-Origin": "https://example.com",
-    "Access-Control-Allow-Methods": "POST, GET, OPTIONS"
+    "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'",
+    "x-blah-blah":"value-blah"
   }
 }
